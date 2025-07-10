@@ -5,5 +5,5 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Testing started
-        run: npm run lint
+        run: npm run build
       
