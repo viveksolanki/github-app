@@ -1,11 +1,9 @@
 name: This is a new Workflow
 on: push
 jobs:
-  Testing:
+  Test:
     runs-on: ubuntu-latest
     steps:
-      - name: Get Code
-        uses: actions/checkout@v4
       - name: Installing Node
         uses: actions/setup-node@v4
         with:
@@ -13,5 +11,5 @@ jobs:
       - name: install dependencies
         run: npm i
       - name: Testing started
-        run: npm run build
+        run: npm run lint
       
