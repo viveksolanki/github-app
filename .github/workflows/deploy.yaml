@@ -1,5 +1,5 @@
 name: This is a new Workflow
-on: push
+on: [push, workflow_dispatch]
 jobs:
   Test:
     runs-on: ubuntu-latest
@@ -26,6 +26,8 @@ jobs:
           node-version: 22
       - name: install dependencies
         run: npm i
-      - name: Testing started
+      - name: Build started
         run: npm run build
+      - name: Deploy
+        run: echo "Deployment in progress"
       
