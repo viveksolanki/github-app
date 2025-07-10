@@ -4,6 +4,8 @@ jobs:
   Testing:
     runs-on: ubuntu-latest
     steps:
+      - name: Installing Node
+        run: npm i
       - name: Testing started
         run: npm run build
       
