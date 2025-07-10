@@ -1,0 +1,9 @@
+name: This is a new Workflow
+on: push
+jobs:
+  Testing:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Testing started
+        run: npm run lint
+      
