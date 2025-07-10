@@ -1,4 +1,4 @@
-name: This is a new Workflow
+name: Deployment
 on: [push, workflow_dispatch]
 jobs:
   Test:
